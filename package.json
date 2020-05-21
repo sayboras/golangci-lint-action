@@ -9,6 +9,8 @@
     "prepare-cache": "cd node_modules/cache && npm run build",
     "prepare-deps": "npm run prepare-setup-go && npm run prepare-cache",
     "build": "tsc && ncc build -o dist/run/ src/main.ts && ncc build -o dist/post_run/ src/post_main.ts",
+    "watched_build_main": "tsc && ncc build -w -o dist/run/ src/main.ts",
+    "watched_build_post_main": "tsc && ncc build -w -o dist/post_run/ src/post_main.ts",
     "type-check": "tsc",
     "lint": "eslint --max-warnings 1 **/*.ts --cache",
     "lint-fix": "eslint **/*.ts --cache --fix",
