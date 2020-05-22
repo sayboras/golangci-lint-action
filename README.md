@@ -101,3 +101,4 @@ This scheme is basic and needs improvements. Pull requests and ideas are welcome
 2. Make a symlink for `act` to work properly: `ln -s . golangci-lint-action`
 3. Prepare deps once: `npm run prepare-deps`
 4. Run `npm run local` after any change to test it
+
