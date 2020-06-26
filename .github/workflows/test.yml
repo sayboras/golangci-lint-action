@@ -26,6 +26,8 @@ jobs:
         os: [ubuntu-16.04, ubuntu-18.04, ubuntu-20.04, macos-latest]
     steps:
     - uses: actions/checkout@v2
+    - run: |
+        env
     - uses: ./
       with:
         version: v1.27
